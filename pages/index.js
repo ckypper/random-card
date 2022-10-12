@@ -14,6 +14,7 @@ export default function Home() {
             {Array.from({ length: 8 }).map((item, index) => (
               <div
                 id={`red-${index}`}
+                key={index}
                 onClick={() => removeElement(`red-${index}`)}
                 className="py-6 px-4 bg-red-600 rounded-md shadow-md text-white cursor-pointer select-none"
               >
@@ -25,6 +26,7 @@ export default function Home() {
             {Array.from({ length: 8 }).map((item, index) => (
               <div
                 id={`blue-${index}`}
+                key={index}
                 onClick={() => removeElement(`blue-${index}`)}
                 className="py-6 px-4 bg-blue-600 rounded-md shadow-md text-white cursor-pointer select-none"
               >
@@ -36,6 +38,7 @@ export default function Home() {
             {Array.from({ length: 8 }).map((item, index) => (
               <div
                 id={`yellow-${index}`}
+                key={index}
                 onClick={() => removeElement(`yellow-${index}`)}
                 className="py-6 px-4 bg-yellow-600 rounded-md shadow-md text-white cursor-pointer select-none"
               >
